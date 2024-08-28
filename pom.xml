@@ -28,7 +28,10 @@
         </dependency>
 
         <!-- Add your additional dependencies here -->
-
+	<dependency>
+    		<groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-thymeleaf</artifactId>
+	</dependency>
         <!-- Spring Boot Test Starter for testing -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
