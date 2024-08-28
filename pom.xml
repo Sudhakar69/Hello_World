@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mywebapp</groupId>
-    <artifactId>my-webapp</artifactId>
+    <artifactId>my-webapptest</artifactId>
     <version>1.0.0</version>
 
     <name>MyWebApp</name>
