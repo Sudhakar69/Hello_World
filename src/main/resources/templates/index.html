@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My Web Application</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+</head>
+<body>
+    <h1>Welcome to My Web Application</h1>
+    <p th:text="\${message}">Default Message</p>
+
+    <script th:src="@{/js/script.js}"></script>
+</body>
+</html>
