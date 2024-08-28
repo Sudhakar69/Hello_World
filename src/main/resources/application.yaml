@@ -1,0 +1,3 @@
+# Spring Boot application.yaml
+server:
+  port: 8080
