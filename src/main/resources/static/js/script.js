@@ -1,13 +1,18 @@
-// script.js
-document.addEventListener('DOMContentLoaded', function() {
-    // This function will run after the document is fully loaded.
-    console.log('Document is ready.');
+document.getElementById('expense-form').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-    // Example of event handling
-    const button = document.querySelector('button');
-    if (button) {
-        button.addEventListener('click', function() {
-            alert('Button was clicked!');
-        });
+    let description = document.getElementById('description').value;
+    let amount = document.getElementById('amount').value;
+    if (description && amount) {
+        const expenseList = document.getElementById('expense-list');
+        const newExpenseItem = document.createElement('li');
+        newExpenseItem.innerHTML = `\${description} - \$\${parseFloat(amount).toFixed(2)}`;
+        expenseList.appendChild(newExpenseItem);
+
+        // Clear the input fields
+        document.getElementById('description').value = '';
+        document.getElementById('amount').value = '';
+    } else {
+        alert('Please fill in both fields.');
     }
 });
